@@ -16,6 +16,7 @@ header .main-nav {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
+    height: 5rem;
 }
 
 header .logo {
@@ -52,16 +53,19 @@ header .hamburger-icon div {
 }
 
 
-#menu-list li {
+.nav-item {
     list-style: none;  
     padding: 1rem 1rem;
     text-transform: capitalize;
     text-align: right;
     color:#001b40;
     cursor: pointer;
+    display: block;
+    text-decoration: none;
 }
 
 
-#menu-list li:hover {
+.nav-item:hover {
     color:#7a3210;
 }
+
