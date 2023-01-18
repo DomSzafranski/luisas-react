@@ -1,4 +1,5 @@
 import { useState, React } from 'react'
+import { NavLink } from 'react-router-dom';
 import './Header.css'
 
 export const Header = () => {
@@ -35,14 +36,19 @@ const HamburgerIcon = props => {
 }
 
 const NavMenu = () => {
+
+    const className = "nav-item";
+    const navLinks = ['home', 'menu', 'about', 'visit us'];
+    // links to be shown in navigation bar
+    // navLinks is looped with .map to add className and path, (replacing ' ' with '-')
+
     return (
         <div className="main-navigation">
-            <ul id="menu-list">
-                <li className="nav-home nav-item">home</li>
-                <li className="nav-menu nav-item">menu</li>
-                <li className="nav-about nav-item">about</li>
-                <li className="nav-location nav-item">visit us</li>
-            </ul>
+
+            <div className="TestMapNav">
+                {navLinks.map(link => (<NavLink className={className} to={('/' + link.replace(' ', '-'))}>{link}</NavLink>))}
+            </div>
+
         </div>
     )
 };

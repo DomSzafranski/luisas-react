@@ -2,7 +2,7 @@ import './HeroBanner.css';
 
 export const HeroBanner = props => {
     return (
-        <div>
+        <banner>
             <div className="splash-container">
                 <div className="splash-banner">
                     <img className="splash-img"
@@ -18,6 +18,6 @@ export const HeroBanner = props => {
                 </div>
 
             </div>
-        </div>
+        </banner>
     )
 }

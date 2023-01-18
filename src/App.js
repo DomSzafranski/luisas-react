@@ -1,23 +1,27 @@
 import './App.css';
 import React from 'react';
-// import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import { Header } from './Components/Header/Header';
-import { HeroBanner } from './Components/Homepage/Body/HeroBanner';
+import { HeroBanner } from './Components/Homepage/HeroBanner/HeroBanner';
+import { CTA } from './Components/Homepage/CTA/cta'
 
 function App() {
 
-  const HeroImg = require("./Media/homepage-background-image-large.jpg");
+  const heroImgSrc = require("./Media/homepage-background-image-large.jpg");
 
+  //this function component renders the top-level views for each page
+  //header and footer are always visible on every page
   return (
+    <Router>
     <div className="App">
             <Header />
-          <section>
             <HeroBanner
-              src={HeroImg}
-              alt=''
+              src={heroImgSrc}
+              alt="Luisa's Italian Restaurant in Radcliffe"
             />
-          </section>
+            <CTA />
     </div>
+    </Router>
 
   );
 }
