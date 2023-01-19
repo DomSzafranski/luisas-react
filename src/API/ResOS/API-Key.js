@@ -1,0 +1,1 @@
+export const resosAPI = 'z3VwDbFKdnhk6_l85yyXueBbKjyJDqDs4eXvwI2enb0';

@@ -25,6 +25,10 @@
     text-align: center;
 }
 
+.splash-text h2 {
+    font-size: 3rem;
+}
+
 .splash-text button {
     margin: 1rem;
 }

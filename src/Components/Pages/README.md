@@ -1,0 +1,1 @@
+The files in this folder are responsible for rendering the elements on each individual page so that they can be rendered at the top-level in App.js

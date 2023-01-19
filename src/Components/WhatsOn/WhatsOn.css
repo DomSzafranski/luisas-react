@@ -1,0 +1,31 @@
+.Whats-On-Container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 2rem;
+}
+
+.Whats-On-Events {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    grid-auto-flow: row;
+}
+
+.Event {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+
+img {
+    aspect-ratio: 1 / 1;
+    height: 10rem;
+    margin-right: 2rem;
+}
