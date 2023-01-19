@@ -1,31 +1,75 @@
+@media only screen and (min-width: 500px) {
+    .Event {
+        display: flex;
+        flex-flow: row wrap;
+
+        flex-basis: 25rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    
+}
+
 .Whats-On-Container {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin: 2rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.Whats-On-Container h2 {
+    font-size: 3rem;
+    text-align: center;
 }
 
 .Whats-On-Events {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 2rem;
-    grid-auto-flow: row;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(246, 246, 246);
+
 }
+
 
 .Event {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: white;
+    margin: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.1rem rgb(229, 229, 229);
     width: 100%;
 
+    height: 25rem;
 }
 
 
-img {
-    aspect-ratio: 1 / 1;
-    height: 10rem;
-    margin-right: 2rem;
+.Img-Container {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.Event img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Event-Details {
+    margin: 1rem;
+}
+
+.Event-Details h3 {
+    margin: 0;
 }
