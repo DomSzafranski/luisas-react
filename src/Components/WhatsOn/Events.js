@@ -35,5 +35,4 @@ export const events = [
         img: require('../../Media/241-cocktails.jpg'),
         imgAlt: ''
     },
-    
 ]

@@ -3,7 +3,7 @@
     height: calc(100vh - 5rem); /* set height to visible screen minus header */
     width: 100%;
     background-color: black;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .splash-banner {
