@@ -4,7 +4,7 @@ import './Header.css'
 
 export const Header = () => {
 
-    let [menuVisible, setVisible] = useState(false);
+    const [menuVisible, setVisible] = useState(false);
 
     const handleClick = () => {
         setVisible(() => {
