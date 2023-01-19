@@ -2,37 +2,45 @@ export const events = [
     {
         title: "Two for One Cocktail Night",
         description: "It’s never too early in the week for cocktails, is it? Invite a couple friends and join us every Wednesday night and enjoy half off your drinks bill – no fuss!",
-        tagline: '',
-        buttonText: "Book a Table",
+        date: 'Every Wednesday',
+        buttonText: "Book Now",
         buttonPath: '/',
         img: require('../../Media/241-cocktails.jpg'),
-        imgAlt: ''
+        imgAlt: '',
+        tagName: "New!",
+        tagEndDate: "2023/01/20"
     },
     {
         title: "30-Hour Sourdough Pizza",
-        description: "With a long, slow, 30-hour prove and baked in as little as 90 seconds in our wood fired oven, our unique Sourdough Crust is wonderfully light and chewey.<br /><br />Our dough is made fresh daily at our open-plan Italian kitchen in Radcliffe.<br /><br />You won’t find it anywhere other than Luisa’s.",
-        tagline: "",
+        description: "With a long, slow, 30-hour prove and baked in as little as 90 seconds in our wood fired oven, our unique Sourdough Crust is wonderfully light and chewey. Our dough is made fresh daily at our open-plan Italian kitchen in Radcliffe.",
+        date: '',
         buttonText: "Book a Table",
         buttonPath: '/',
         img: '/',
-        imgAlt: ''
+        imgAlt: '',
+        tagName: "Sold Out",
+        tagEndDate: "2023/01/20"
     },
     {
         title: "30-Hour Sourdough Pizza",
-        description: "With a long, slow, 30-hour prove and baked in as little as 90 seconds in our wood fired oven, our unique Sourdough Crust is wonderfully light and chewey.<br /><br />Our dough is made fresh daily at our open-plan Italian kitchen in Radcliffe.<br /><br />You won’t find it anywhere other than Luisa’s.",
-        tagline: "",
+        description: "With a long, slow, 30-hour prove and baked in as little as 90 seconds in our wood fired oven, our unique Sourdough Crust is wonderfully light and chewey. Our dough is made fresh daily at our open-plan Italian kitchen in Radcliffe.",
+        date: '',
         buttonText: "Book a Table",
         buttonPath: '/',
         img: '/',
-        imgAlt: ''
+        imgAlt: '',
+        tagName: "",
+        tagEndDate: "2023/01/20"
     },
     {
         title: "Two for One Cocktail Night",
         description: "It’s never too early in the week for cocktails, is it? Invite a couple friends and join us every Wednesday night and enjoy half off your drinks bill – no fuss!",
-        tagline: '',
+        date: '',
         buttonText: "Book a Table",
         buttonPath: '/',
         img: require('../../Media/241-cocktails.jpg'),
-        imgAlt: ''
+        imgAlt: '',
+        tagName: "",
+        tagEndDate: "2023/01/20"
     },
 ]

@@ -1,5 +1,5 @@
 @media only screen and (min-width: 500px) {
-    .Event {
+    .EventCard {
         display: flex;
         flex-flow: row wrap;
 
@@ -37,7 +37,7 @@
 }
 
 
-.Event {
+.EventCard {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -61,15 +61,50 @@
     overflow: hidden;
 }
 
-.Event img {
+.EventCard img {
     width: 100%;
     object-fit: cover;
 }
 
-.Event-Details {
+.EventCard p, h3, button {
+    margin: 0.5rem;
+}
+
+.EventCard button {
+    width: 8rem;
+}
+
+.eventTitle {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Event-With-Image {
     margin: 1rem;
 }
 
+.Event-Without-Image {
+    margin: 1rem;
+    text-align: center;
+}
+
+
 .Event-Details h3 {
     margin: 0;
+}
+
+.date {
+    font-weight: 700;
+    color: grey;
+    letter-spacing: 0.2rem;
+}
+
+.tag-element {
+    color: white;
+    background-color: #7a3210;
+    padding: 0.1rem 0.5rem;
+    letter-spacing: 0.1rem;
+    box-shadow: 0.2rem 0.2rem #ff9767;
 }
