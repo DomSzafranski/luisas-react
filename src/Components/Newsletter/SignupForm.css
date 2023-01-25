@@ -1,0 +1,34 @@
+.signupForm {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupForm h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.inputContainer {
+    padding: 1.5rem;
+}
+
+#email {
+    height: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+label {
+    color: grey;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+.inputField {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
