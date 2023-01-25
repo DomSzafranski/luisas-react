@@ -1,0 +1,29 @@
+footer {
+    background-color: rgb(246, 246, 246);
+    height: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    height: max-content;
+
+    box-shadow: inset 0rem 0.5rem 1rem lightgrey;
+}
+
+.innerFooter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.innerFooter section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}

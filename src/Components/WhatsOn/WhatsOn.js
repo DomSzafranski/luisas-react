@@ -2,6 +2,7 @@ import { React } from 'react';
 import './WhatsOn.css';
 import { events } from "./Events";
 import { legacy_createStore as createStore } from 'redux';
+import { Provider } from 'react-redux';
 
 // REDUX STATE MANAGEMENT ==============================================
 const eventsState = events;
@@ -160,7 +161,6 @@ const EventDetails = props => {
 
     //check if an image will be loaded
     let imgAvailable = displayStore.getState().displayImg;
-    console.log(imgAvailable);
 
     let className = imgAvailable === true ? 'Event-With-Image' : 'Event-Without-Image';
 
