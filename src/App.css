@@ -1,0 +1,27 @@
+html {
+    font-size: 16px;
+}
+
+/* override default button styling */
+button {
+    background-color: #001b40;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #012c68;
+}
+
+a {
+    text-decoration: none;
+    color: #7a3210;
+}
+
+.highlightStyle {
+    color: #ff9767;
+    text-shadow: 0.2rem 0.2rem #7a3210;
+}

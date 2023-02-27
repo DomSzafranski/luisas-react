@@ -15,7 +15,7 @@ export const Header = () => {
     return (
         <header>
             <div className="main-nav">
-                <h1 className="logo">Luisa's</h1>
+                <NavLink to='/'><h1 className="logo">Luisa's</h1></NavLink>
                 <HamburgerIcon onClick={handleClick} />
             </div>
             {menuVisible === true ? <NavMenu onClick={handleClick}/> : null}

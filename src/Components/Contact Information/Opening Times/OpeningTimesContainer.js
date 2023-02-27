@@ -22,8 +22,6 @@ export const OpeningTimesContainer = () => {
 
     })
 
-    console.log(computedOpeningTimes);
-
     return (
         <OpeningTimesPresentation />
     )

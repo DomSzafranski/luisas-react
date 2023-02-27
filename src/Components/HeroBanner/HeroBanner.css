@@ -16,22 +16,39 @@
     z-index: 1;
     grid-area: 1 / -1;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     margin: auto;
+    max-width: 80%;
 
-    text-transform: capitalize;
     color: white;
-    font-size: 1.3rem;
     text-align: center;
 }
 
 .splash-text h2 {
-    font-size: 3rem;
+    font-size: 4rem;
+}
+
+.splash-text h3 {
+    font-size: 2rem;
 }
 
 .splash-text button {
     margin: 1rem;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #001b40;
+    box-shadow: 0.2rem 0.2rem #1869da;
+    font-weight: 900;
+    width: 10rem;
 }
+
+.splash-text button:active {
+    background-color: #1869da;
+    box-shadow: 0.2rem 0.2rem #001b40;
+}
+
 
 .splash-img {
     grid-area: 1 / -1;
@@ -42,3 +59,9 @@
     opacity: 0.5;
 }
 
+.buttonsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
