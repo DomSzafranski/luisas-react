@@ -1,0 +1,83 @@
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.categoryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    margin: 2rem;
+
+    border: 1px solid #7a32103c;
+    width: 90vw;
+}
+
+.categoryName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+    font-size: 2rem;
+    color: #7a3210;
+
+    border-bottom: 0.1rem solid #7a3210;
+
+}
+
+.menuItemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.menuItem {
+    display: grid;
+    grid: repeat(1fr, 2) / repeat(1fr, 2);
+
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 20rem;
+    min-width: 18rem;
+}
+
+.dietary {
+    font-size: 0.8rem;
+    letter-spacing: normal;
+}
+
+.itemName {
+    padding-bottom: 0.5rem;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.itemPrice {
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
+    text-align: right;
+
+    color: grey;
+}
+
+.itemDescription {
+    grid-row: 2 / 2;
+    grid-column: 1 / span 2;
+
+}
