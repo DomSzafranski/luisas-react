@@ -1,11 +1,16 @@
-import { menuItems } from "./MenuItems";
-// import '/menu.css';
 import React from "react";
+import { MenuBanner } from "./MenuBanner";
+import { Menu } from "../../Menu/menu";
 
 export const MenuPage = () => {
+    const heroImgSrc = require("../../../Media/homepage-background-image-large.jpg");
     return (
         <div>
-            <p> this is the menu etc </p>
+            <MenuBanner
+            src={heroImgSrc}
+            alt="Luisa's Italian Restaurant Menu"
+        />
+            <Menu />
         </div>
     )
 }
