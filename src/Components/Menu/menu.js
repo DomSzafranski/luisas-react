@@ -1,5 +1,5 @@
 import React from "react";
-import { menuItems } from "./MenuItems";
+import { menuItems } from "./Menus/MainMenu";
 import './menu.css';
 
 export const Menu = () => {
@@ -49,7 +49,7 @@ export const Menu = () => {
 const MenuItemContainer = props => {
     return (
         <div className="menuItem">
-            <p className="itemName">{props.item.name}</p>
+            <h4 className="itemName">{props.item.name}</h4>
             <p className="itemPrice">£{props.item.price}</p>
             <p className="itemDescription">{props.item.description}</p>
         </div>
