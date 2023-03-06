@@ -31,11 +31,26 @@
 
 }
 
+.subheadingDescription {
+    text-align: center;
+
+    font-size: 1.5rem;
+    color: grey;
+    padding: 0.5rem;
+}
+
 .menuItemContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+}
+
+.ctaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
 }
 
 .menuItem {
