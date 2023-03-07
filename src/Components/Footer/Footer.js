@@ -11,11 +11,12 @@ export const Footer = () => {
         <footer>
             <div className="innerFooter">
                 {/* Don't render the opening times in the footer if currently on the visit us page */}
+
                 {useLocation().pathname !== '/visit-us' ?
                     <section>
                         <OpeningTimesContainer />
                     </section>
-                : null}
+                    : null}
                 <section>
                     <SignupForm />
                 </section>

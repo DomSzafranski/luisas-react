@@ -1,0 +1,29 @@
+.parkingContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.parking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    font-style: normal;
+    line-height: 1.5rem;
+}
+
+.parking h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.parking p {
+    text-align: center;
+    color: grey;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    
+}
