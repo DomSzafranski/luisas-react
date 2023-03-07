@@ -27,3 +27,20 @@ footer {
     align-items: center;
     margin: 1rem;
 }
+
+.footerNavLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.footerNavLinks ul {
+    list-style: none;
+    display: flex;
+}
+
+.footerNavLinks li {
+    padding: 0rem 1rem 1rem;
+
+}
