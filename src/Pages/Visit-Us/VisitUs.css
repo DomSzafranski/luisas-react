@@ -1,0 +1,35 @@
+.VisitUsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.MainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-flow: column wrap;
+    width: 90vw;
+}
+
+
+.ContactInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.HeaderTitle {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.ContactInformation section {
+    padding: 1rem;
+    width: 100%;
+}
+
+

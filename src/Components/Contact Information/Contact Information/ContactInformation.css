@@ -1,31 +1,31 @@
-.AddressContainer {
+.ContactInfoContainer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 
-.address {
+.ContactInfo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    text-align: center;
 
     font-style: normal;
     line-height: 1.5rem;
 }
 
-.address h3 {
+.ContactInfo h3 {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
 
-.address p {
-    display: flex;
-    text-align: left;
+.ContactInfo p {
+    text-align: center;
     color: grey;
     font-weight: 800;
     letter-spacing: 0.1rem;
-    text-transform: capitalize;
+    padding: 0.5rem;
     
 }

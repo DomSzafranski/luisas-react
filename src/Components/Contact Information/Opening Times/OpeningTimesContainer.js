@@ -1,8 +1,10 @@
 import React from "react";
 import { openingTimes } from "./OpeningTimes";
+import { useState } from "react";
 import './OpeningTimes.css';
 
-export const OpeningTimesContainer = () => {
+ export const OpeningTimesContainer = props => {
+
 
     const computedOpeningTimes = [];
     openingTimes.map(day => {

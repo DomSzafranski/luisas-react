@@ -1,11 +1,11 @@
-.AddressContainer {
+.parkingContainer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 
-.address {
+.parking {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,17 +15,15 @@
     line-height: 1.5rem;
 }
 
-.address h3 {
+.parking h3 {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
 
-.address p {
-    display: flex;
-    text-align: left;
+.parking p {
+    text-align: center;
     color: grey;
     font-weight: 800;
     letter-spacing: 0.1rem;
-    text-transform: capitalize;
     
 }

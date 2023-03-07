@@ -1,5 +1,5 @@
 import './HeroBanner.css';
-import { NavLink } from 'react-router-dom';
+import { BookTable, OrderOnline, InternalNav } from '../Buttons/ctaButtons';
 
 export const HeroBanner = props => {
     return (
@@ -15,9 +15,9 @@ export const HeroBanner = props => {
                         <h2>Welcome to Luisa's</h2>
                         <h3>The home of Wood Fired, Sourdough Pizza in Radciffe</h3>
                         <div className='buttonsContainer'>
-                            <a href='https://luisas.resos.com' target='blank'><button className="cta-button">Book a Table</button></a>
-                            <NavLink to='./menu'><button className="cta-button">View Menu</button></NavLink>
-                            <a href='https://goodeats.io/lcl' target='blank'><button className="cta-button">Order Online</button></a>
+                            <BookTable buttonText="Book a Table" />
+                            <InternalNav buttonText="View Menu" path="/menu" />
+                            <OrderOnline buttonText="Order Online" />
                         </div>
                     </div>
                 </div>
