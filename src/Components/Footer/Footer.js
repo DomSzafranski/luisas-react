@@ -26,6 +26,8 @@ export const Footer = () => {
                 <ul>
                     <li><Link to='/careers'>Careers</Link></li>
                     <li><Link to='/franchise'>Franchise with Luisa's</Link></li>
+                    <li><Link to='/privacy-policy'>Manage Cookies</Link></li>
+
                 </ul>
             </div>
         </footer>

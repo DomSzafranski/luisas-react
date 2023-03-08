@@ -7,11 +7,12 @@ import { Footer } from './Components/Footer/Footer';
 import { Homepage } from './Pages/Homepage/Homepage';
 import { MenuPage } from './Pages/Menu/MenuPage';
 import { VisitUs } from './Pages/Visit-Us/VisitUs';
+import { Franchise } from './Pages/Franchise/Franchise';
 import { ErrorPage } from './Pages/404/404';
 import { PrivacyPolicy } from './Pages/Privacy Policy/privacy-policy';
 import { Menu } from './Components/Menu/menu';
 import { MothersDayMenu } from './Components/Menu/MothersDayMenu';
-import { CookieBanner } from './Components/Compliance/CookieBanner';
+import { CookieBanner } from './Components/Compliance/Cookies';
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
         <Route path='/about' />
         <Route path='/visit-us' element={<VisitUs />} />
         <Route path='/careers' />
-        <Route path='/franchise' />
+        <Route path='/franchise' element={<Franchise />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path="*" element={<ErrorPage />} /> {/* 404 handler */}
       </Routes>
