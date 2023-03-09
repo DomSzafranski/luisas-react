@@ -56,7 +56,7 @@ export const menuItems = [
     {
         name: 'Share a bottle of Prosecco',
         price: '£20',
-        description: 'Italy\s iconic sparkling white wine',
+        description: 'Italy\'s iconic sparkling white wine',
         category: 'extras',
         highlight: false,
         allergens: [],

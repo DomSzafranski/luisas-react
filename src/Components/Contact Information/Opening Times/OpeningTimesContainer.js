@@ -1,6 +1,5 @@
 import React from "react";
 import { openingTimes } from "./OpeningTimes";
-import { useState } from "react";
 import './OpeningTimes.css';
 
  export const OpeningTimesContainer = props => {
