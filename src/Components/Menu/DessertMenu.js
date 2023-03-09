@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { menuItems } from "./Menus/DessertMenu";
 import { DietaryBanner } from "./Dietary/DietaryTags";
 import './menu.css';
@@ -7,6 +8,10 @@ export const DessertMenu = () => {
 
     return (
         <section className="menuContainer">
+            <Helmet>
+                <title>Dessert Menu | Luisa's Pizzeria</title>
+                <meta name="description" content="Dessert Menu for Luisa's Pizzeria in Radcliffe" />
+            </Helmet>
             <DietaryBanner />
             <div className="categoryContainer">
                 <h2 className="categoryName">Dessert</h2>

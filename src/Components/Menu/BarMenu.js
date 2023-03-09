@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { menuItems } from "./Menus/BarMenu";
 import './menu.css';
 
@@ -6,6 +7,10 @@ export const BarMenu = () => {
 
     return (
         <section className="menuContainer">
+            <Helmet>
+                <title>Bar Menu | Luisa's Pizzeria</title>
+                <meta name="description" content="Bar Menu for Luisa's Pizzeria in Radcliffe" />
+            </Helmet>
             {/* --------red wine container-------- */}
             <div className="categoryContainer">
                 <h2 className="categoryName">Red Wine</h2>
@@ -85,14 +90,14 @@ const MenuItemContainer = props => {
     return (
         <div className="menuItem">
             <div className="itemHeader">
-            <h4 className="itemName">{props.item.name}</h4>
-            <div className="DietaryTags">
+                <h4 className="itemName">{props.item.name}</h4>
+                <div className="DietaryTags">
                     {props.item.dietary.map(tag => ( //loop through the dietary tags and add each one
                         <p className="measure">{tag}</p>
                     ))}
                 </div>
             </div>
-            <p className="itemPrice">{props.item.price.length > 0 ? '£'+ props.item.price : null}</p>
+            <p className="itemPrice">{props.item.price.length > 0 ? '£' + props.item.price : null}</p>
             <p className="itemDescription">{props.item.description}</p>
         </div >
     )
