@@ -15,9 +15,8 @@ export const MenuPage = () => {
     return (
         <div>
             <Helmet>
-                <title>Menu | Luisa's Italian Restaurant</title>
-                <meta charset="UTF-8" />
-                <meta name="description" content="Menu for Luisa's Italian restaurant in Radcliffe" />
+                <title>Menu | Luisa's Pizzeria</title>
+                <meta name="description" content="Menu for Luisa's Pizzeria in Radcliffe" />
             </Helmet>
 
             <MenuBanner

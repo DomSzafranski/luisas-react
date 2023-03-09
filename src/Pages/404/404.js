@@ -1,10 +1,15 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import './404.css';
 
 export const ErrorPage = () => {
     return (
         <div>
+            <Helmet>
+                <title>Oops! This page doesn't exist</title>
+                <meta name="description" content="404: Page not Found" />
+            </Helmet>
             <header className="ErrorPageHeader">
                 <h1>404</h1>
                 <h2>This page doesn't exist</h2>
