@@ -112,6 +112,13 @@
     color: grey;
 }
 
+.prices {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-flow: row nowrap;
+}
+
 .itemDescription {
     grid-row: 2 / 2;
     grid-column: 1 / span 2;

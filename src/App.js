@@ -1,7 +1,7 @@
 import './App.css';
 import './reset.css';
 import React from 'react';
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Header } from './Components/Header/Header';
 import { Footer } from './Components/Footer/Footer';
 import { Homepage } from './Pages/Homepage/Homepage';
@@ -11,6 +11,8 @@ import { Franchise } from './Pages/Franchise/Franchise';
 import { ErrorPage } from './Pages/404/404';
 import { PrivacyPolicy } from './Pages/Privacy Policy/privacy-policy';
 import { Menu } from './Components/Menu/menu';
+import { BarMenu } from './Components/Menu/BarMenu';
+import { DessertMenu } from './Components/Menu/DessertMenu';
 import { MothersDayMenu } from './Components/Menu/MothersDayMenu';
 import { CookieBanner } from './Components/Compliance/Cookies';
 import ScrollToTop from './Helpers/ScrollToTop';
@@ -27,8 +29,8 @@ function App() {
           <Route path='/' element={<Homepage />} />
           <Route path='/menu' element={<MenuPage />}>
             <Route index element={<Menu />} />
-            <Route path='dessert' element={<Menu />} />
-            <Route path='bar' element={<Menu />} />
+            <Route path='dessert' element={<DessertMenu />} />
+            <Route path='bar' element={<BarMenu />} />
             <Route path='mothers-day' element={<MothersDayMenu />} />
           </Route>
           <Route path='/about' />
