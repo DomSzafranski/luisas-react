@@ -24,8 +24,10 @@ export const Footer = () => {
             </div>
             <div className="footerNavLinks">
                 <ul>
-                    <li><Link to='/careers'>Careers</Link></li>
+                    {/* <li><Link to='/careers'>Careers</Link></li> */}
                     <li><Link to='/franchise'>Franchise with Luisa's</Link></li>
+                    <li><Link to='/privacy-policy'>Privacy Policy</Link></li>
+
                 </ul>
             </div>
         </footer>

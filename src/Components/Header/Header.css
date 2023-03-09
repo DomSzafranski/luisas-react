@@ -9,6 +9,7 @@
 header {
     overflow: hidden;
     margin: 0;
+    box-shadow: 0rem 0.05rem 1rem lightgrey;
 }
 
 header .main-nav {
