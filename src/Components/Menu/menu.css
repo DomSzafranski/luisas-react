@@ -68,8 +68,15 @@
     letter-spacing: normal;
 }
 
-.itemName {
+.ItemHeader {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-flow: column nowrap;
     padding-bottom: 0.5rem;
+}
+
+.itemName {
     grid-row: 1 / 1;
     grid-column: 1 / 1;
 
@@ -79,11 +86,25 @@
     font-weight: 600;
 }
 
+.DietaryTags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+    text-align: left;
+}
+
+.DietaryTags p {
+    padding-right: 0.5rem;
+}
+
 .itemPrice {
     letter-spacing: 0.1rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     grid-row: 1 / 1;
     grid-column: 2 / 2;
     text-align: right;

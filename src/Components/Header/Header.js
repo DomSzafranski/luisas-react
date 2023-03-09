@@ -38,7 +38,7 @@ const HamburgerIcon = props => {
 const NavMenu = props => {
 
     const className = "nav-item";
-    const navLinks = ['home', 'menu', 'about', 'visit us'];
+    const navLinks = ['home', 'menu', 'visit us']; //temporarily removed about us link 09-03-23
 
     const formatURL = link => {
         link = link === 'home' ? '' : link
