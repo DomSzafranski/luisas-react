@@ -1,0 +1,45 @@
+.DietaryBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+    /* border: 1px solid rgb(246, 246, 246); */
+}
+
+.DietaryBanner p {
+    padding: 0.3rem 1rem;
+    font-weight: 500;
+}
+
+.SpicyTag {
+    content: '';
+    border-bottom: 0.7rem solid #961920;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+
+}
+
+.Spicy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    color: #961920;
+    font-weight: 500;
+}
+
+.Nuts {
+    color: #ad4841;
+    font-weight: 500;
+}
+
+.Vegetarian, .PlantBased {
+    color: #1e7a33;
+    font-weight: 500;
+}
+
+.GlutenFree {
+    color: #49388b;
+    font-weight: 500;
+}
