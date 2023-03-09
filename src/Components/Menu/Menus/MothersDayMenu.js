@@ -15,7 +15,7 @@ export const menuItems = [
         category: 'afternoon tea',
         highlight: false,
         allergens: [],
-        dietary: []
+        dietary: ['V', 'PB']
     },
     {
         name: 'Bruschetta',
@@ -24,7 +24,7 @@ export const menuItems = [
         category: 'afternoon tea',
         highlight: false,
         allergens: [],
-        dietary: []
+        dietary: ['V']
     },
     {
         name: 'Arancini',
@@ -42,7 +42,7 @@ export const menuItems = [
         category: 'afternoon tea',
         highlight: false,
         allergens: [],
-        dietary: []
+        dietary: ['Spicy', 'GF']
     },
     {
         name: 'Share a bottle of house wine',

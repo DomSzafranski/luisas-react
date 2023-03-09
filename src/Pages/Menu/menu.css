@@ -1,8 +1,15 @@
+.MenuPageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
 .navLinksContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
-
+    width: 80vw;
     padding-top: 1rem;
 }

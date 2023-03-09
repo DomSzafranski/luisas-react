@@ -88,8 +88,8 @@
 
 .DietaryTags {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     flex-flow: row nowrap;
     font-size: 0.8rem;
     padding-top: 0.3rem;
@@ -110,6 +110,13 @@
     text-align: right;
 
     color: grey;
+}
+
+.prices {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-flow: row nowrap;
 }
 
 .itemDescription {

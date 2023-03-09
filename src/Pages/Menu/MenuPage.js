@@ -17,6 +17,7 @@ export const MenuPage = () => {
                 src={heroImgSrc}
                 alt="Luisa's Italian Restaurant Menu"
             />
+            <div className="MenuPageContainer">
             <nav className="navLinksContainer">
                 <Link to='./'><button className="cta-button">Main Menu</button></Link>
                 <Link to='./dessert'><button className="cta-button">Dessert Menu</button></Link>
@@ -27,6 +28,8 @@ export const MenuPage = () => {
             passes the parent state down to each child element*/}
             
                 <Outlet />
+
+            </div>
 
 
         </div>
