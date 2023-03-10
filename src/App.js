@@ -18,7 +18,7 @@ import { CookieBanner } from './Components/Compliance/Cookies';
 import ScrollToTop from './Helpers/ScrollToTop';
 
 import ReactGA from 'react-ga4';
-import TagManager from 'react-gtm-module';
+import TagManager from 'react-gtm-module'
 
 
 //GA4 tracking info
@@ -31,7 +31,6 @@ const tagManagerArgs = {
 }
 
 TagManager.initialize(tagManagerArgs)
-
 
 function App() {
 
