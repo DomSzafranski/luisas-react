@@ -18,12 +18,20 @@ import { CookieBanner } from './Components/Compliance/Cookies';
 import ScrollToTop from './Helpers/ScrollToTop';
 
 import ReactGA from 'react-ga4';
+import TagManager from 'react-gtm-module'
 import ReactPixel from 'react-facebook-pixel';
 
 
 //GA4 tracking info
 const TRACKING_ID = 'G-LPS6VZTTTR';
 ReactGA.initialize(TRACKING_ID);
+
+//GTM tracking info
+const tagManagerArgs = {
+  gtmId: 'GTM-WTZW3NX'
+}
+
+TagManager.initialize(tagManagerArgs)
 
 function App() {
 
@@ -35,7 +43,7 @@ function App() {
 
   ReactPixel.init('453376766741418', options);
   ReactPixel.revokeConsent(); //revoke consent until accept cookies button clicked
-  
+
 
 ReactPixel.pageView(); // For tracking page view
 
