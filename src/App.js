@@ -24,10 +24,10 @@ ReactGA.initialize(TRACKING_ID);
 function App() {
 
 
-  //GA4 routing
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  // //GA4 routing
+  // useEffect(() => {
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }, []);
 
   //this function component renders the top-level views for each page
   //header and footer are always visible on every page
