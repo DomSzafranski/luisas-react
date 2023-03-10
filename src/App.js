@@ -51,7 +51,6 @@ function App() {
           </Route>
           <Route path='/about' />
           <Route path='/visit-us' element={<VisitUs />} />
-          <Route path='/careers' element={<ErrorPage />} /> {/* temporarily load 404 page until finished */}
           <Route path='/franchise' element={<Franchise />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path="*" element={<ErrorPage />} /> {/* 404 handler */}

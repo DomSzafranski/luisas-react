@@ -6,6 +6,8 @@ import { WhatsOn } from "../../Components/WhatsOn/WhatsOn"
 export const Homepage = () => {
 
     const heroImgSrc = require("../../Media/homepage-background-image-large.jpg");
+    const heroImgSrcWebP = require("../../Media/homepage-background-image-large.webp");
+
     return (
         <div>
             <Helmet>
@@ -13,7 +15,8 @@ export const Homepage = () => {
                 <meta name="description" content="Luisa's Pizzeria in Radcliffe" />
             </Helmet>
             <HeroBanner
-                src={heroImgSrc}
+                srcWebp = {heroImgSrcWebP}
+                fallback={heroImgSrc}
                 alt="Luisa's Italian Restaurant in Radcliffe"
             />
             <WhatsOn />

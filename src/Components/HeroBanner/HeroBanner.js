@@ -1,15 +1,20 @@
 import './HeroBanner.css';
 import { BookTable, OrderOnline, InternalNav } from '../Buttons/ctaButtons';
 
-export const HeroBanner = props => {
+export const HeroBanner = ({ 
+    srcWebp,
+    fallback,
+    alt
+}) => {
     return (
         <banner>
-            <div className="splash-container">
+            <picture className="splash-container">
                 <div className="splash-banner">
-                    <img className="splash-img"
-                        src={props.src}
-                        alt={props.alt}
-                    />
+                        <source srcSet={srcWebp} type="image/webp" />
+                        <img className="splash-img"
+                            src={fallback}
+                            alt={alt}
+                        />
 
                     <div className="splash-text">
                         <h2>Welcome to Luisa's</h2>
@@ -22,7 +27,7 @@ export const HeroBanner = props => {
                     </div>
                 </div>
 
-            </div>
+            </picture>
         </banner>
     )
 }
