@@ -34,19 +34,10 @@ TagManager.initialize(tagManagerArgs)
 
 function App() {
 
-  //facebook pixel initialize
-  const options = {
-    autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
-    debug: false, // enable logs
-  };
-
   //this function component renders the top-level views for each page
   //header and footer are always visible on every page
   return (
     <div className="App">
-
-    
-
 
       <Header />
         <ScrollToTop />
