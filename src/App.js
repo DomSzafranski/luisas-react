@@ -39,9 +39,6 @@ function App() {
   return (
     <div className="App">
 
-    
-
-
       <Header />
         <ScrollToTop />
         <Routes>
