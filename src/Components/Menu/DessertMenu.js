@@ -12,7 +12,6 @@ export const DessertMenu = () => {
                 <title>Dessert Menu | Luisa's Pizzeria</title>
                 <meta name="description" content="Dessert Menu for Luisa's Pizzeria in Radcliffe" />
             </Helmet>
-            <DietaryBanner />
             <div className="categoryContainer">
                 <h2 className="categoryName">Dessert</h2>
                 <div className="menuItemContainer">
@@ -22,7 +21,7 @@ export const DessertMenu = () => {
                     ))}
                 </div>
             </div>
-
+            <DietaryBanner />
         </section>
     )
 

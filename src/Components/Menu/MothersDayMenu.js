@@ -12,7 +12,6 @@ export const MothersDayMenu = () => {
                 <title>Mother's Day Menu | Luisa's Pizzeria</title>
                 <meta name="description" content="Mother's Day Menu for Luisa's Pizzeria in Radcliffe" />
             </Helmet>
-            <DietaryBanner />
             {/* --------menu container-------- */}
             <div className="categoryContainer">
                 <h2 className="categoryName">Afternoon Tea - £30 for Two</h2>
@@ -46,7 +45,7 @@ export const MothersDayMenu = () => {
                 </div>
 
             </div>
-
+            <DietaryBanner />
         </section>
     )
 
