@@ -1,6 +1,6 @@
 import './App.css';
 import './reset.css';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Header } from './Components/Header/Header';
 import { Footer } from './Components/Footer/Footer';
@@ -16,23 +16,37 @@ import { DessertMenu } from './Components/Menu/DessertMenu';
 import { MothersDayMenu } from './Components/Menu/MothersDayMenu';
 import { CookieBanner } from './Components/Compliance/Cookies';
 import ScrollToTop from './Helpers/ScrollToTop';
-import ReactGA from 'react-ga4';
 
+import ReactGA from 'react-ga4';
+import ReactPixel from 'react-facebook-pixel';
+
+
+//GA4 tracking info
 const TRACKING_ID = 'G-LPS6VZTTTR';
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
 
+  //facebook pixel initialize
+  const options = {
+    autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
+    debug: false, // enable logs
+  };
 
-  // //GA4 routing
-  // useEffect(() => {
-  //   ReactGA.pageview(window.location.pathname + window.location.search);
-  // }, []);
+  ReactPixel.init('453376766741418', options);
+  ReactPixel.revokeConsent(); //revoke consent until accept cookies button clicked
+  
+
+ReactPixel.pageView(); // For tracking page view
 
   //this function component renders the top-level views for each page
   //header and footer are always visible on every page
   return (
     <div className="App">
+
+    
+
+
       <Header />
         <ScrollToTop />
         <Routes>
