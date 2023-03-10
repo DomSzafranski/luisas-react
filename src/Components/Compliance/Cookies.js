@@ -6,7 +6,7 @@ export const CookieBanner = () => {
     return (
         <div>
             <CookieConsent
-                debug={true}
+                debug={false}
                 location="bottom"
                 style={{ background: '#f6f6f6', color: 'black' }}
                 buttonStyle={{ background: '#001b40', color: 'white' }}
