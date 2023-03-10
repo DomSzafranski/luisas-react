@@ -7,7 +7,6 @@ export const Menu = () => {
 
     return (
         <section className="menuContainer">
-            <DietaryBanner />
             {/* --------pizza container-------- */}
             <div className="categoryContainer">
                 <h2 className="categoryName">Pizza</h2>
@@ -42,6 +41,7 @@ export const Menu = () => {
                 </div>
 
             </div>
+            <DietaryBanner />
         </section>
     )
 
