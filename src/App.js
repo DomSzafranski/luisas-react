@@ -1,6 +1,6 @@
 import './App.css';
 import './reset.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Header } from './Components/Header/Header';
 import { Footer } from './Components/Footer/Footer';
@@ -16,8 +16,18 @@ import { DessertMenu } from './Components/Menu/DessertMenu';
 import { MothersDayMenu } from './Components/Menu/MothersDayMenu';
 import { CookieBanner } from './Components/Compliance/Cookies';
 import ScrollToTop from './Helpers/ScrollToTop';
+import ReactGA from 'react-ga4';
+
+const TRACKING_ID = 'G-LPS6VZTTTR';
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
+
+
+  //GA4 routing
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   //this function component renders the top-level views for each page
   //header and footer are always visible on every page

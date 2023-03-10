@@ -1,5 +1,5 @@
 import React from "react";
-import CookieConsent, { resetCookieConsentValue } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
 import { Link } from "react-router-dom";
 
 export const CookieBanner = () => {
